@@ -1,12 +1,14 @@
 import java.awt.Toolkit;
 import java.awt.Window;
+import java.awt.event.ActionEvent;
 import java.awt.event.WindowEvent;
 
 public class AddUp extends javax.swing.JFrame {
-
+    int score;
     
     public AddUp() {
         initComponents();
+        txtscore.setVisible(false);
     }
 
     
@@ -16,8 +18,10 @@ public class AddUp extends javax.swing.JFrame {
 
         btnstart = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        txtscore = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Start");
 
         btnstart.setText("Start");
         btnstart.addActionListener(new java.awt.event.ActionListener() {
@@ -28,6 +32,9 @@ public class AddUp extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Monotype Corsiva", 1, 18)); // NOI18N
         jLabel1.setText("    AddUp Your Score!");
+
+        txtscore.setEditable(false);
+        txtscore.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -40,15 +47,20 @@ public class AddUp extends javax.swing.JFrame {
                         .addComponent(btnstart, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(70, 70, 70)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(143, 143, 143)
+                        .addComponent(txtscore, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(81, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(120, Short.MAX_VALUE)
+                .addContainerGap(117, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtscore, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21)
                 .addComponent(btnstart, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(111, 111, 111))
         );
@@ -62,6 +74,7 @@ public class AddUp extends javax.swing.JFrame {
     private void btnstartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnstartActionPerformed
         close();
         Question q = new Question();
+        Question.txtscore1.setText(this.txtscore.getText());
         q.setVisible(true);
     }//GEN-LAST:event_btnstartActionPerformed
 
@@ -103,5 +116,6 @@ public class AddUp extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnstart;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField txtscore;
     // End of variables declaration//GEN-END:variables
 }

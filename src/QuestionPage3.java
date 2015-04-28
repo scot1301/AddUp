@@ -1,18 +1,14 @@
-import java.awt.Color;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-
-public class Question extends javax.swing.JFrame {
-
-    int score=0;
+public class QuestionPage3 extends javax.swing.JFrame {
+    
+    int score3=0;
     String ans[] = new String[18];
-    public Question() {
+    public QuestionPage3() {
         initComponents();
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -39,7 +35,7 @@ public class Question extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
-        btnnext = new javax.swing.JButton();
+        btnnext3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -91,31 +87,13 @@ public class Question extends javax.swing.JFrame {
         jRadioButton34 = new javax.swing.JRadioButton();
         jRadioButton35 = new javax.swing.JRadioButton();
         jRadioButton36 = new javax.swing.JRadioButton();
-        lblscore = new javax.swing.JLabel();
-        txtscore1 = new javax.swing.JTextField();
-        lbl2 = new javax.swing.JLabel();
-        lbl1 = new javax.swing.JLabel();
-        lbl3 = new javax.swing.JLabel();
-        lbl4 = new javax.swing.JLabel();
-        lbl5 = new javax.swing.JLabel();
-        lbl6 = new javax.swing.JLabel();
-        lbl7 = new javax.swing.JLabel();
-        lbl8 = new javax.swing.JLabel();
-        lbl9 = new javax.swing.JLabel();
-        lbl10 = new javax.swing.JLabel();
-        lbl12 = new javax.swing.JLabel();
-        lbl11 = new javax.swing.JLabel();
-        lbl14 = new javax.swing.JLabel();
-        lbl13 = new javax.swing.JLabel();
-        lbl15 = new javax.swing.JLabel();
-        lbl16 = new javax.swing.JLabel();
-        lbl18 = new javax.swing.JLabel();
-        lbl17 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        txtscore3 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Page 1");
+        setTitle("Page 3");
 
-        jLabel1.setText("Have you ever met a celebrity?");
+        jLabel1.setText("Have you ever felt a womans breasts?");
 
         buttonGroup1.add(jRadioButton1);
         jRadioButton1.setText("Yes");
@@ -125,46 +103,46 @@ public class Question extends javax.swing.JFrame {
         jRadioButton2.setText("No");
         jRadioButton2.setActionCommand("N");
 
-        btnnext.setText("Next Page");
-        btnnext.addActionListener(new java.awt.event.ActionListener() {
+        btnnext3.setText("Next Page");
+        btnnext3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnnextActionPerformed(evt);
+                btnnext3ActionPerformed(evt);
             }
         });
 
-        jLabel2.setText("Have you ever eaten Sushi?");
+        jLabel2.setText("Have you ever won a bet(real money)?");
 
-        jLabel3.setText("Have you ever stolen something?");
+        jLabel3.setText("Have you ever played Call of Duty?");
 
-        jLabel4.setText("Have you ever smoked a cigerette?");
+        jLabel4.setText("Have you ever played Minecraft?");
 
-        jLabel5.setText("Have you ever tasted alcohol?");
+        jLabel5.setText("Have you ever played Halo?");
 
-        jLabel6.setText("Have you ever been drunk?");
+        jLabel6.setText("Have you ever fingered a girl?");
 
-        jLabel7.setText("Have you ever smoked pot?");
+        jLabel7.setText("Have you ever bought drugs?");
 
-        jLabel8.setText("Have you ever done acid?");
+        jLabel8.setText("Have you ever broken a bone?");
 
-        jLabel9.setText("Have you ever pet a duck?");
+        jLabel9.setText("Have you had a serious injury?");
 
-        jLabel10.setText("Have you ever eaten crab?");
+        jLabel10.setText("Have you ever cuddled with someone?");
 
-        jLabel11.setText("Have you ever been on tv?");
+        jLabel11.setText("Have you ever been on a date with someone?");
 
-        jLabel12.setText("Have you ever had a girlfriend/boyfriend?");
+        jLabel12.setText("Have you ever passed out?");
 
-        jLabel13.setText("Have you ever kissed a girl/boy?");
+        jLabel13.setText("Have you ever cheated on a test?");
 
-        jLabel14.setText("Have you ever played on a baseball team?");
+        jLabel14.setText("Have you ever bullshitted a speach?");
 
-        jLabel15.setText("Have you ever scored in soccer(if played)?");
+        jLabel15.setText("Have you ever skinny dipped?");
 
-        jLabel16.setText("Have you ever played ding dong ditch?");
+        jLabel16.setText("Have you ever been caught doing something bad?");
 
-        jLabel17.setText("Have you ever prank called someone?");
+        jLabel17.setText("Have you ever been arrested?");
 
-        jLabel18.setText("Do you love your parents?");
+        jLabel18.setText("Have you ever sucked a dick you didn't like?");
 
         buttonGroup2.add(jRadioButton3);
         jRadioButton3.setText("Yes");
@@ -302,45 +280,9 @@ public class Question extends javax.swing.JFrame {
         jRadioButton36.setText("No");
         jRadioButton36.setActionCommand("N");
 
-        lblscore.setText("Score: ");
+        jLabel19.setText("Score:");
 
-        txtscore1.setEditable(false);
-
-        lbl2.setText(" ");
-
-        lbl1.setText(" ");
-
-        lbl3.setText(" ");
-
-        lbl4.setText(" ");
-
-        lbl5.setText(" ");
-
-        lbl6.setText(" ");
-
-        lbl7.setText(" ");
-
-        lbl8.setText(" ");
-
-        lbl9.setText(" ");
-
-        lbl10.setText(" ");
-
-        lbl12.setText(" ");
-
-        lbl11.setText(" ");
-
-        lbl14.setText(" ");
-
-        lbl13.setText(" ");
-
-        lbl15.setText(" ");
-
-        lbl16.setText(" ");
-
-        lbl18.setText(" ");
-
-        lbl17.setText(" ");
+        txtscore3.setEditable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -349,89 +291,44 @@ public class Question extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lbl7, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(jLabel2)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(lbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(jLabel1)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(lbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel3)
-                                                .addGap(10, 10, 10))
-                                            .addComponent(jLabel4)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel5)
-                                                .addGap(24, 24, 24)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(lbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(lbl4, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(lbl5, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addGap(6, 6, 6))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lbl8, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lbl9, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lbl10, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lbl12, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addGap(140, 140, 140)
-                                .addComponent(btnnext)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel14)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lbl14, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lbl15, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lbl16, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lbl18, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jLabel17)
-                                .addGap(37, 37, 37)
-                                .addComponent(lbl17, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lbl11, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel13)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lbl13, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jRadioButton1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jRadioButton2))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel8)
+                                    .addComponent(jLabel9)
+                                    .addComponent(jLabel10)
+                                    .addComponent(jLabel11)
+                                    .addComponent(jLabel12)
+                                    .addComponent(jLabel13)
+                                    .addComponent(jLabel14)
+                                    .addComponent(jLabel15)
+                                    .addComponent(jLabel16)
+                                    .addComponent(jLabel17)
+                                    .addComponent(jLabel18))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(btnnext3)
+                                .addGap(46, 46, 46)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel19)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtscore3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                     .addComponent(jRadioButton5)
                                     .addGap(18, 18, 18)
@@ -444,6 +341,10 @@ public class Question extends javax.swing.JFrame {
                                     .addComponent(jRadioButton7)
                                     .addGap(18, 18, 18)
                                     .addComponent(jRadioButton8))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addComponent(jRadioButton11)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jRadioButton12))
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                     .addComponent(jRadioButton13)
                                     .addGap(18, 18, 18)
@@ -495,24 +396,7 @@ public class Question extends javax.swing.JFrame {
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                     .addComponent(jRadioButton3)
                                     .addGap(18, 18, 18)
-                                    .addComponent(jRadioButton6))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(lblscore)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(txtscore1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jRadioButton1)
-                                .addGap(18, 18, 18)
-                                .addComponent(jRadioButton2))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lbl6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioButton11)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioButton12)))
+                                    .addComponent(jRadioButton6))))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -522,18 +406,25 @@ public class Question extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2)
-                    .addComponent(lbl1))
+                    .addComponent(jRadioButton2))
                 .addGap(10, 10, 10)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton5)
-                            .addComponent(jRadioButton4))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jRadioButton3)
+                                    .addComponent(jRadioButton6))
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel3))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jRadioButton5)
+                                .addComponent(jRadioButton4)))
                         .addGap(18, 18, 18)
-                        .addComponent(lbl4)
+                        .addComponent(jLabel4)
                         .addGap(18, 18, 18)
-                        .addComponent(lbl5))
+                        .addComponent(jLabel5))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jRadioButton7)
@@ -541,105 +432,77 @@ public class Question extends javax.swing.JFrame {
                         .addGap(32, 32, 32))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jRadioButton9)
-                        .addComponent(jRadioButton10))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(jRadioButton3)
-                            .addComponent(jRadioButton6)
-                            .addComponent(lbl2))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbl3)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel4)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel5)))))
-                .addGap(10, 10, 10)
+                        .addComponent(jRadioButton10)))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(jRadioButton11)
-                    .addComponent(jRadioButton12)
-                    .addComponent(lbl6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(jRadioButton12))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(jRadioButton13)
-                    .addComponent(jRadioButton14)
-                    .addComponent(lbl7))
+                    .addComponent(jRadioButton14))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(jRadioButton15)
-                    .addComponent(jRadioButton16)
-                    .addComponent(lbl8))
+                    .addComponent(jRadioButton16))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
                     .addComponent(jRadioButton17)
-                    .addComponent(jRadioButton18)
-                    .addComponent(lbl9))
+                    .addComponent(jRadioButton18))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
                     .addComponent(jRadioButton19)
-                    .addComponent(jRadioButton20)
-                    .addComponent(lbl10))
+                    .addComponent(jRadioButton20))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
                     .addComponent(jRadioButton21)
-                    .addComponent(jRadioButton22)
-                    .addComponent(lbl11))
+                    .addComponent(jRadioButton22))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
                     .addComponent(jRadioButton23)
-                    .addComponent(jRadioButton24)
-                    .addComponent(lbl12))
+                    .addComponent(jRadioButton24))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
                     .addComponent(jRadioButton25)
-                    .addComponent(jRadioButton26)
-                    .addComponent(lbl13))
+                    .addComponent(jRadioButton26))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
                     .addComponent(jRadioButton27)
-                    .addComponent(jRadioButton28)
-                    .addComponent(lbl14))
+                    .addComponent(jRadioButton28))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel15)
                     .addComponent(jRadioButton29)
-                    .addComponent(jRadioButton30)
-                    .addComponent(lbl15))
+                    .addComponent(jRadioButton30))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16)
                     .addComponent(jRadioButton31)
-                    .addComponent(jRadioButton32)
-                    .addComponent(lbl16))
+                    .addComponent(jRadioButton32))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
                     .addComponent(jRadioButton33)
-                    .addComponent(jRadioButton34)
-                    .addComponent(lbl17))
+                    .addComponent(jRadioButton34))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18)
                     .addComponent(jRadioButton35)
-                    .addComponent(jRadioButton36)
-                    .addComponent(lbl18))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                    .addComponent(jRadioButton36))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnnext)
-                    .addComponent(lblscore)
-                    .addComponent(txtscore1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(btnnext3)
+                    .addComponent(jLabel19)
+                    .addComponent(txtscore3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         pack();
@@ -649,7 +512,7 @@ public class Question extends javax.swing.JFrame {
         WindowEvent winClosingEvent = new WindowEvent(this, WindowEvent.WINDOW_CLOSING);
         Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(winClosingEvent);
     }
-    private void btnnextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnextActionPerformed
+    private void btnnext3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnext3ActionPerformed
         try{
             ans[0] = buttonGroup1.getSelection().getActionCommand();
             ans[1] = buttonGroup2.getSelection().getActionCommand();
@@ -675,196 +538,48 @@ public class Question extends javax.swing.JFrame {
             return;
         }
         
-        if(ans[0].equals("Y")){
-            score+=15;
-            lbl1.setForeground(Color.green);
-            lbl1.setText("+15");
-        }
-        else{
-            score+=0;
-            lbl1.setForeground(Color.black);
-            lbl1.setText("+0");
-        }
-        if(ans[1].equals("Y")){
-            score+=5;
-            lbl2.setForeground(Color.green);
-            lbl2.setText("+5");
-        }
-        else{
-            score+=0;
-            lbl2.setForeground(Color.black);
-            lbl2.setText("+0");
-        }
-        if(ans[2].equals("Y")){
-            score-=8;
-            lbl3.setForeground(Color.red);
-            lbl3.setText("-8");
-        }
-        else{
-            score+=10;
-            lbl3.setForeground(Color.green);
-            lbl3.setText("+10");
-        }
-        if(ans[3].equals("Y")){
-            score-=5;
-            lbl4.setForeground(Color.red);
-            lbl4.setText("-5");
-        }
-        else{
-            score+=5;
-            lbl4.setForeground(Color.green);
-            lbl4.setText("+5");
-        }
-        if(ans[4].equals("Y")){
-            score+=5;
-            lbl5.setForeground(Color.green);
-            lbl5.setText("+5");
-        }
-        else{
-            score+=5;
-            lbl5.setForeground(Color.green);
-            lbl5.setText("+5");
-        }
-        if(ans[5].equals("Y")){
-            score-=10;
-            lbl6.setForeground(Color.red);
-            lbl6.setText("-10");
-        }
-        else{
-            score+=15;
-            lbl6.setForeground(Color.green);
-            lbl6.setText("+15");
-        }
-        if(ans[6].equals("Y")){
-            score-=15;
-            lbl7.setForeground(Color.red);
-            lbl7.setText("-15");
-        }
-        else{
-            score+=20;
-            lbl7.setForeground(Color.green);
-            lbl7.setText("+20");
-        }
-        if(ans[7].equals("Y")){
-            score-=30;
-            lbl8.setForeground(Color.red);
-            lbl8.setText("-30");
-        }
-        else{
-            score+=40;
-            lbl8.setForeground(Color.green);
-            lbl8.setText("+40");
-        }
-        if(ans[8].equals("Y")){
-            score+=2;
-            lbl9.setForeground(Color.green);
-            lbl9.setText("+2");
-        }
-        else{
-            score+=0;
-            lbl9.setForeground(Color.black);
-            lbl9.setText("+0");
-        }
-        if(ans[9].equals("Y")){
-            score+=7;
-            lbl10.setForeground(Color.green);
-            lbl10.setText("+7");
-        }
-        else{
-            score+=0;
-            lbl10.setForeground(Color.black);
-            lbl10.setText("+0");
-        }
-        if(ans[10].equals("Y")){
-            score+=35;
-            lbl11.setForeground(Color.green);
-            lbl11.setText("+35");
-        }
-        else{
-            score+=0;
-            lbl11.setForeground(Color.black);
-            lbl11.setText("+0");
-        }
-        if(ans[11].equals("Y")){
-            score+=40;
-            lbl12.setForeground(Color.green);
-            lbl12.setText("+40");
-        }
-        else{
-            score+=0;
-            lbl12.setForeground(Color.black);
-            lbl12.setText("+0");
-        }
-        if(ans[12].equals("Y")){
-            score+=15;
-            lbl13.setForeground(Color.green);
-            lbl13.setText("+15");
-        }
-        else{
-            score+=0;
-            lbl13.setForeground(Color.black);
-            lbl13.setText("+0");
-        }
-        if(ans[13].equals("Y")){
-            score+=5;
-            lbl14.setForeground(Color.green);
-            lbl14.setText("+5");
-        }
-        else{
-            score+=0;
-            lbl14.setForeground(Color.black);
-            lbl14.setText("+0");
-        }
-        if(ans[14].equals("Y")){
-            score+=10;
-            lbl15.setForeground(Color.green);
-            lbl15.setText("+10");
-        }
-        else{
-            score+=0;
-            lbl15.setForeground(Color.black);
-            lbl15.setText("+0");
-        }
-        if(ans[15].equals("Y")){
-            score+=5;
-            lbl16.setForeground(Color.green);
-            lbl16.setText("+5");
-        }
-        else{
-            score+=7;
-            lbl16.setForeground(Color.green);
-            lbl16.setText("+7");
-        }
-        if(ans[16].equals("Y")){
-            score+=10;
-            lbl17.setForeground(Color.green);
-            lbl17.setText("+10");
-        }
-        else{
-            score+=18;
-            lbl17.setForeground(Color.green);
-            lbl17.setText("+18");
-        }
-        if(ans[17].equals("Y")){
-            score+=50;
-            lbl18.setForeground(Color.green);
-            lbl18.setText("+50");
-        }
-        else{
-            score-=80;
-            lbl18.setForeground(Color.red);
-            lbl18.setText("-80");
-        }
-        
-        
-        
-        txtscore1.setText(""+score);
-        
+        if(ans[0].equals("Y"))score3+=25;
+        else score3+=0;
+        if(ans[1].equals("Y"))score3+=50;
+        else score3+=0;
+        if(ans[2].equals("Y"))score3+=5;
+        else score3+=0;
+        if(ans[3].equals("Y"))score3+=5;
+        else score3+=0;
+        if(ans[4].equals("Y"))score3+=5;
+        else score3+=0;
+        if(ans[5].equals("Y"))score3+=45;
+        else score3+=0;
+        if(ans[6].equals("Y"))score3-=100;
+        else score3+=35;
+        if(ans[7].equals("Y"))score3-=50;
+        else score3+=5;
+        if(ans[8].equals("Y"))score3-=75;
+        else score3+=15;
+        if(ans[9].equals("Y"))score3+=25;
+        else score3+=0;
+        if(ans[10].equals("Y"))score3+=15;
+        else score3+=0;
+        if(ans[11].equals("Y"))score3-=10;
+        else score3+=0;
+        if(ans[12].equals("Y"))score3+=20;
+        else score3+=50;
+        if(ans[13].equals("Y"))score3+=15;
+        else score3+=0;
+        if(ans[14].equals("Y"))score3+=7;
+        else score3+=13;
+        if(ans[15].equals("Y"))score3-=80;
+        else score3+=10;
+        if(ans[16].equals("Y"))score3-=150;
+        else score3+=7;
+        if(ans[17].equals("Y"))score3-=100;
+        else score3-=500;
+        txtscore3.setText(" "+score3);
         close();
-        QuestionPage2 q2 = new QuestionPage2();
-        QuestionPage2.txtscore2.setText(this.txtscore1.getText());
-        q2.setVisible(true);
-    }//GEN-LAST:event_btnnextActionPerformed
+        ScorePage sp = new ScorePage();
+        ScorePage.txtscore4.setText(this.txtscore3.getText());
+        sp.setVisible(true);
+    }//GEN-LAST:event_btnnext3ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -899,7 +614,7 @@ public class Question extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnnext;
+    private javax.swing.JButton btnnext3;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup10;
     private javax.swing.ButtonGroup buttonGroup11;
@@ -929,6 +644,7 @@ public class Question extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -973,25 +689,6 @@ public class Question extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton7;
     private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JRadioButton jRadioButton9;
-    private javax.swing.JLabel lbl1;
-    private javax.swing.JLabel lbl10;
-    private javax.swing.JLabel lbl11;
-    private javax.swing.JLabel lbl12;
-    private javax.swing.JLabel lbl13;
-    private javax.swing.JLabel lbl14;
-    private javax.swing.JLabel lbl15;
-    private javax.swing.JLabel lbl16;
-    private javax.swing.JLabel lbl17;
-    private javax.swing.JLabel lbl18;
-    private javax.swing.JLabel lbl2;
-    private javax.swing.JLabel lbl3;
-    private javax.swing.JLabel lbl4;
-    private javax.swing.JLabel lbl5;
-    private javax.swing.JLabel lbl6;
-    private javax.swing.JLabel lbl7;
-    private javax.swing.JLabel lbl8;
-    private javax.swing.JLabel lbl9;
-    public static javax.swing.JLabel lblscore;
-    public static javax.swing.JTextField txtscore1;
+    public static javax.swing.JTextField txtscore3;
     // End of variables declaration//GEN-END:variables
 }
