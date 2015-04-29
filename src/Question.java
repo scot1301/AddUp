@@ -11,6 +11,7 @@ public class Question extends javax.swing.JFrame {
     String ans[] = new String[18];
     public Question() {
         initComponents();
+        btnnext.setEnabled(false);
     }
     
     @SuppressWarnings("unchecked")
@@ -111,6 +112,7 @@ public class Question extends javax.swing.JFrame {
         lbl16 = new javax.swing.JLabel();
         lbl18 = new javax.swing.JLabel();
         lbl17 = new javax.swing.JLabel();
+        btnss = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Page 1");
@@ -342,6 +344,13 @@ public class Question extends javax.swing.JFrame {
 
         lbl17.setText(" ");
 
+        btnss.setText("See Score");
+        btnss.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnssActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -397,7 +406,8 @@ public class Question extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(lbl12, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addGap(140, 140, 140)
+                                .addComponent(btnss)
+                                .addGap(67, 67, 67)
                                 .addComponent(btnnext)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
@@ -639,7 +649,8 @@ public class Question extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnnext)
                     .addComponent(lblscore)
-                    .addComponent(txtscore1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(txtscore1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnss)))
         );
 
         pack();
@@ -650,6 +661,13 @@ public class Question extends javax.swing.JFrame {
         Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(winClosingEvent);
     }
     private void btnnextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnextActionPerformed
+        close();
+        QuestionPage2 q2 = new QuestionPage2();
+        QuestionPage2.txtscore2.setText(this.txtscore1.getText());
+        q2.setVisible(true);
+    }//GEN-LAST:event_btnnextActionPerformed
+
+    private void btnssActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnssActionPerformed
         try{
             ans[0] = buttonGroup1.getSelection().getActionCommand();
             ans[1] = buttonGroup2.getSelection().getActionCommand();
@@ -855,16 +873,10 @@ public class Question extends javax.swing.JFrame {
             lbl18.setForeground(Color.red);
             lbl18.setText("-80");
         }
-        
-        
-        
+        btnss.setEnabled(false);
+        btnnext.setEnabled(true);
         txtscore1.setText(""+score);
-        
-        close();
-        QuestionPage2 q2 = new QuestionPage2();
-        QuestionPage2.txtscore2.setText(this.txtscore1.getText());
-        q2.setVisible(true);
-    }//GEN-LAST:event_btnnextActionPerformed
+    }//GEN-LAST:event_btnssActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -900,6 +912,7 @@ public class Question extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnnext;
+    private javax.swing.JButton btnss;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup10;
     private javax.swing.ButtonGroup buttonGroup11;

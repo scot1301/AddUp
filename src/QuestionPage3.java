@@ -7,6 +7,7 @@ public class QuestionPage3 extends javax.swing.JFrame {
     String ans[] = new String[18];
     public QuestionPage3() {
         initComponents();
+        btnnext3.setEnabled(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -89,6 +90,7 @@ public class QuestionPage3 extends javax.swing.JFrame {
         jRadioButton36 = new javax.swing.JRadioButton();
         jLabel19 = new javax.swing.JLabel();
         txtscore3 = new javax.swing.JTextField();
+        btnss3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Page 3");
@@ -284,6 +286,13 @@ public class QuestionPage3 extends javax.swing.JFrame {
 
         txtscore3.setEditable(false);
 
+        btnss3.setText("See Score");
+        btnss3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnss3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -318,16 +327,17 @@ public class QuestionPage3 extends javax.swing.JFrame {
                                     .addComponent(jLabel16)
                                     .addComponent(jLabel17)
                                     .addComponent(jLabel18))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(btnss3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnnext3)
                                 .addGap(46, 46, 46)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel19)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtscore3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtscore3))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                     .addComponent(jRadioButton5)
@@ -502,7 +512,8 @@ public class QuestionPage3 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnnext3)
                     .addComponent(jLabel19)
-                    .addComponent(txtscore3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(txtscore3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnss3)))
         );
 
         pack();
@@ -513,31 +524,6 @@ public class QuestionPage3 extends javax.swing.JFrame {
         Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(winClosingEvent);
     }
     private void btnnext3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnext3ActionPerformed
-        try{
-            ans[0] = buttonGroup1.getSelection().getActionCommand();
-            ans[1] = buttonGroup2.getSelection().getActionCommand();
-            ans[2] = buttonGroup3.getSelection().getActionCommand();
-            ans[3] = buttonGroup4.getSelection().getActionCommand();
-            ans[4] = buttonGroup5.getSelection().getActionCommand();
-            ans[5] = buttonGroup6.getSelection().getActionCommand();
-            ans[6] = buttonGroup7.getSelection().getActionCommand();
-            ans[7] = buttonGroup8.getSelection().getActionCommand();
-            ans[8] = buttonGroup9.getSelection().getActionCommand();
-            ans[9] = buttonGroup10.getSelection().getActionCommand();
-            ans[10] = buttonGroup11.getSelection().getActionCommand();
-            ans[11] = buttonGroup12.getSelection().getActionCommand();
-            ans[12] = buttonGroup13.getSelection().getActionCommand();
-            ans[13] = buttonGroup14.getSelection().getActionCommand();
-            ans[14] = buttonGroup15.getSelection().getActionCommand();
-            ans[15] = buttonGroup16.getSelection().getActionCommand();
-            ans[16] = buttonGroup17.getSelection().getActionCommand();
-            ans[17] = buttonGroup18.getSelection().getActionCommand();
-        }catch(Exception e)
-        {
-            JOptionPane.showMessageDialog(this, e.toString());//"Must fill out form correctly");
-            return;
-        }
-        
         if(ans[0].equals("Y"))score3+=25;
         else score3+=0;
         if(ans[1].equals("Y"))score3+=50;
@@ -574,12 +560,42 @@ public class QuestionPage3 extends javax.swing.JFrame {
         else score3+=7;
         if(ans[17].equals("Y"))score3-=100;
         else score3-=500;
-        txtscore3.setText(" "+score3);
+        
         close();
         ScorePage sp = new ScorePage();
         ScorePage.txtscore4.setText(this.txtscore3.getText());
         sp.setVisible(true);
     }//GEN-LAST:event_btnnext3ActionPerformed
+
+    private void btnss3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnss3ActionPerformed
+        try{
+            ans[0] = buttonGroup1.getSelection().getActionCommand();
+            ans[1] = buttonGroup2.getSelection().getActionCommand();
+            ans[2] = buttonGroup3.getSelection().getActionCommand();
+            ans[3] = buttonGroup4.getSelection().getActionCommand();
+            ans[4] = buttonGroup5.getSelection().getActionCommand();
+            ans[5] = buttonGroup6.getSelection().getActionCommand();
+            ans[6] = buttonGroup7.getSelection().getActionCommand();
+            ans[7] = buttonGroup8.getSelection().getActionCommand();
+            ans[8] = buttonGroup9.getSelection().getActionCommand();
+            ans[9] = buttonGroup10.getSelection().getActionCommand();
+            ans[10] = buttonGroup11.getSelection().getActionCommand();
+            ans[11] = buttonGroup12.getSelection().getActionCommand();
+            ans[12] = buttonGroup13.getSelection().getActionCommand();
+            ans[13] = buttonGroup14.getSelection().getActionCommand();
+            ans[14] = buttonGroup15.getSelection().getActionCommand();
+            ans[15] = buttonGroup16.getSelection().getActionCommand();
+            ans[16] = buttonGroup17.getSelection().getActionCommand();
+            ans[17] = buttonGroup18.getSelection().getActionCommand();
+        }catch(Exception e)
+        {
+            JOptionPane.showMessageDialog(this, e.toString());//"Must fill out form correctly");
+            return;
+        }
+        btnss3.setEnabled(false);
+        btnnext3.setEnabled(true);
+        txtscore3.setText(" "+score3);
+    }//GEN-LAST:event_btnss3ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -615,6 +631,7 @@ public class QuestionPage3 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnnext3;
+    private javax.swing.JButton btnss3;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup10;
     private javax.swing.ButtonGroup buttonGroup11;
